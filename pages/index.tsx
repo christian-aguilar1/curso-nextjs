@@ -9,7 +9,7 @@ import Loading from "@components/Loading/Loading";
 import styles from "@styles/pages/Home.module.scss";
 
 const fetchResult = async () => {
-  const dev = process.env.NODE_ENV;
+  const dev = process.env.NODE_ENV !== "production";
 
   const urlComplete = dev
     ? "http://localhost:3000/api/avo"
