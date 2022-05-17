@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useCart } from "store/Cart";
 
-import styles from "@styles/components/Header.module.scss";
+import styles from "@styles/components/NavBar.module.scss";
 
 const Header = () => {
   const { pathname } = useRouter();
